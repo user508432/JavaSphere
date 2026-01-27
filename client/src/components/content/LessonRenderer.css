@@ -1,0 +1,153 @@
+.lesson-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+/* Headings */
+.lesson-heading {
+    margin-top: var(--space-6);
+    margin-bottom: var(--space-2);
+}
+
+.lesson-heading--1 {
+    font-size: var(--font-size-3xl);
+    margin-top: 0;
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.lesson-heading--2 {
+    font-size: var(--font-size-2xl);
+    color: var(--accent-primary);
+}
+
+.lesson-heading--3 {
+    font-size: var(--font-size-xl);
+}
+
+/* Paragraphs */
+.lesson-paragraph {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+    color: var(--text-secondary);
+}
+
+/* Lists */
+.lesson-list {
+    padding-left: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.lesson-list li {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+    color: var(--text-secondary);
+}
+
+.lesson-list li::marker {
+    color: var(--accent-primary);
+}
+
+/* Callouts */
+.lesson-callout {
+    display: flex;
+    gap: var(--space-4);
+    padding: var(--space-4) var(--space-5);
+    border-radius: var(--border-radius-lg);
+    border-left: 4px solid;
+}
+
+.lesson-callout--note {
+    background: rgba(99, 102, 241, 0.08);
+    border-color: var(--accent-primary);
+}
+
+.lesson-callout--warning {
+    background: rgba(245, 158, 11, 0.08);
+    border-color: var(--warning);
+}
+
+.callout-icon {
+    font-size: var(--font-size-xl);
+    flex-shrink: 0;
+}
+
+.callout-content {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+    color: var(--text-primary);
+}
+
+/* Visualization Placeholder */
+.lesson-visualization {
+    margin: var(--space-6) 0;
+}
+
+.visualization-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: var(--space-10);
+    background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-elevated) 100%);
+    border: 2px dashed var(--border-color);
+    border-radius: var(--border-radius-xl);
+    transition: all var(--transition-normal);
+}
+
+.visualization-placeholder:hover {
+    border-color: var(--accent-primary);
+    box-shadow: var(--shadow-glow);
+}
+
+.viz-icon {
+    font-size: var(--font-size-4xl);
+    opacity: 0.6;
+}
+
+.viz-label {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.viz-hint {
+    font-size: var(--font-size-sm);
+    color: var(--text-tertiary);
+}
+
+/* Complexity */
+.lesson-complexity {
+    display: flex;
+    gap: var(--space-6);
+    padding: var(--space-4) var(--space-5);
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-lg);
+}
+
+.complexity-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.complexity-label {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--text-tertiary);
+}
+
+.complexity-item code {
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--accent-primary);
+    background: rgba(99, 102, 241, 0.1);
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--border-radius-sm);
+    border: none;
+}

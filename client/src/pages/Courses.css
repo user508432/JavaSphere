@@ -1,0 +1,119 @@
+.courses-page {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--space-8) var(--space-6);
+}
+
+.courses-header {
+    text-align: center;
+    margin-bottom: var(--space-10);
+}
+
+.courses-header h1 {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--space-4);
+}
+
+.courses-header p {
+    font-size: var(--font-size-lg);
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.courses-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.course-list-skeleton {
+    height: 140px;
+}
+
+.course-list-item {
+    text-decoration: none;
+    color: inherit;
+}
+
+.course-list-card {
+    transition: all var(--transition-normal);
+}
+
+.course-list-item:hover .course-list-card {
+    transform: translateX(8px);
+    border-color: var(--accent-primary);
+    box-shadow: var(--shadow-lg);
+}
+
+.course-list-content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+}
+
+.course-list-icon {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: var(--border-radius-lg);
+    flex-shrink: 0;
+}
+
+.course-list-info {
+    flex: 1;
+}
+
+.course-list-info h2 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-2);
+}
+
+.course-list-info p {
+    font-size: var(--font-size-base);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-2);
+}
+
+.course-list-meta {
+    display: flex;
+    gap: var(--space-2);
+    font-size: var(--font-size-sm);
+    color: var(--text-tertiary);
+}
+
+.course-list-arrow {
+    font-size: var(--font-size-xl);
+    color: var(--text-tertiary);
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all var(--transition-fast);
+}
+
+.course-list-item:hover .course-list-arrow {
+    opacity: 1;
+    transform: translateX(0);
+    color: var(--accent-primary);
+}
+
+.error-message {
+    text-align: center;
+    padding: var(--space-8);
+    background: rgba(239, 68, 68, 0.1);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--error);
+}
+
+@media (max-width: 768px) {
+    .course-list-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .course-list-arrow {
+        display: none;
+    }
+}

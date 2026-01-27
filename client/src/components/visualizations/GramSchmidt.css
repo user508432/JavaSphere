@@ -1,0 +1,61 @@
+.gram-schmidt-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 1.5rem auto;
+    background: var(--bg-surface);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.step-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.step-controls button {
+    padding: 0.3rem 0.8rem;
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--border-color);
+    background: var(--bg-elevated);
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.step-controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.step-description {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    min-height: 2.5rem;
+}
+
+.proj-line {
+    stroke: var(--warning);
+    stroke-width: 2;
+}
+
+.u2 {
+    stroke: #10B981;
+}
+
+.vector-label.u2 {
+    fill: #10B981;
+}
+
+.v1 {
+    stroke: var(--accent-primary);
+    fill: var(--accent-primary);
+}
+
+.v2 {
+    stroke: var(--accent-secondary);
+    fill: var(--accent-secondary);
+}

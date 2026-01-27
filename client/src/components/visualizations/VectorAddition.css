@@ -1,0 +1,79 @@
+.vector-addition-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 1.5rem auto;
+    background: var(--bg-surface);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-viz {
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--border-color);
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-viz:hover {
+    background: var(--bg-secondary);
+    border-color: var(--accent-primary);
+}
+
+.btn-viz.active {
+    background: var(--accent-primary);
+    color: white;
+    border-color: var(--accent-primary);
+}
+
+.guide-line {
+    stroke: var(--text-tertiary);
+    stroke-width: 1;
+    opacity: 0.5;
+}
+
+.v1 {
+    stroke: var(--accent-primary);
+    fill: var(--accent-primary);
+}
+
+.v2 {
+    stroke: var(--accent-secondary);
+    fill: var(--accent-secondary);
+}
+
+.result {
+    stroke: #EC4899;
+    fill: #EC4899;
+    stroke-width: 4;
+}
+
+.result-animation {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.formula-box {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius-md);
+}
+
+.vector-label {
+    font-size: 14px;
+    font-weight: 700;
+}

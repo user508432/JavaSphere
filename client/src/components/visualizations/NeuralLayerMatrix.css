@@ -1,0 +1,99 @@
+.neural-layer-container {
+    width: 100%;
+    max-width: 650px;
+    margin: 1.5rem auto;
+    background: var(--bg-surface);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.neural-svg {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.weight-line {
+    stroke: var(--text-tertiary);
+    stroke-width: 1.5;
+    opacity: 0.2;
+    transition: all 0.2s ease;
+}
+
+.weight-connection:hover .weight-line {
+    stroke: var(--accent-primary);
+    stroke-width: 3;
+    opacity: 0.8;
+}
+
+.weight-label {
+    font-size: 10px;
+    fill: var(--text-tertiary);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    font-family: var(--font-mono);
+}
+
+.weight-connection:hover .weight-label {
+    opacity: 1;
+}
+
+.node {
+    fill: var(--bg-elevated);
+    stroke: var(--border-color);
+    stroke-width: 2;
+    transition: all 0.3s ease;
+}
+
+.input-node {
+    stroke: var(--accent-primary);
+}
+
+.output-node {
+    stroke: var(--accent-secondary);
+}
+
+.node-text {
+    fill: var(--text-primary);
+    font-size: 12px;
+    font-weight: 700;
+    font-family: var(--font-mono);
+}
+
+.layer-label {
+    font-size: 12px;
+    font-weight: 600;
+    fill: var(--text-tertiary);
+    text-transform: uppercase;
+}
+
+.math-explanation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius-md);
+}
+
+.matrix-eq {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.vector-symbol {
+    color: var(--accent-primary);
+}
+
+.matrix-symbol {
+    color: var(--accent-secondary);
+}

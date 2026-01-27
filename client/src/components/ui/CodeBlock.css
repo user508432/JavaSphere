@@ -1,0 +1,106 @@
+.code-block {
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-color);
+    margin: var(--space-4) 0;
+}
+
+.code-block-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-3) var(--space-4);
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.code-block-title {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.code-block-language {
+    font-size: var(--font-size-xs);
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    font-family: var(--font-mono);
+}
+
+.code-block-container {
+    position: relative;
+}
+
+.code-copy-btn {
+    position: absolute;
+    top: var(--space-3);
+    right: var(--space-3);
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    opacity: 0;
+    transition: all var(--transition-fast);
+    z-index: 10;
+}
+
+.code-block:hover .code-copy-btn {
+    opacity: 1;
+}
+
+.code-copy-btn:hover {
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+}
+
+.code-pre {
+    margin: 0;
+    padding: var(--space-4);
+    overflow-x: auto;
+    font-family: var(--font-mono);
+    font-size: var(--font-size-sm);
+    line-height: 1.7;
+}
+
+.code-line {
+    display: flex;
+    gap: var(--space-4);
+}
+
+.line-number {
+    flex-shrink: 0;
+    width: 2.5em;
+    color: var(--text-tertiary);
+    text-align: right;
+    user-select: none;
+    opacity: 0.6;
+}
+
+.line-content {
+    flex: 1;
+    color: var(--text-primary);
+    white-space: pre;
+}
+
+/* Syntax highlighting (basic) */
+.code-pre code {
+    color: var(--text-primary);
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .code-block {
+    background: #1a1a24;
+}
+
+[data-theme="dark"] .code-block-header {
+    background: #12121a;
+}
+
+[data-theme="dark"] .line-content {
+    color: #e2e8f0;
+}

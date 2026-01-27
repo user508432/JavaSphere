@@ -1,0 +1,101 @@
+.matrix-transform-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 1.5rem auto;
+    background: var(--bg-surface);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.matrix-display {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.bracket {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--text-tertiary);
+}
+
+.values {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0 0.5rem;
+}
+
+.values .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.slider-control {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.slider-control label {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.slider-control input[type="range"] {
+    width: 100%;
+    accent-color: var(--accent-primary);
+}
+
+.grid-line-bg {
+    stroke: var(--text-tertiary);
+    stroke-width: 1;
+    opacity: 0.1;
+}
+
+.grid-line-transformed {
+    stroke: var(--text-tertiary);
+    stroke-width: 1;
+    opacity: 0.3;
+}
+
+.grid-line-transformed.bold {
+    stroke-width: 2;
+    opacity: 0.6;
+}
+
+.basis-vector {
+    stroke-width: 4;
+}
+
+.basis-vector.i {
+    stroke: var(--accent-primary);
+}
+
+.basis-vector.j {
+    stroke: var(--accent-secondary);
+}
+
+.basis-label {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.basis-label.i {
+    fill: var(--accent-primary);
+}
+
+.basis-label.j {
+    fill: var(--accent-secondary);
+}

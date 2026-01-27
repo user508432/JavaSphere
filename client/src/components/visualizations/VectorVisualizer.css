@@ -1,0 +1,79 @@
+.vector-visualizer-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 1.5rem auto;
+    background: var(--bg-surface);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.vector-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: visible;
+}
+
+.axis-line {
+    stroke: var(--text-tertiary);
+    stroke-width: 1.5;
+    opacity: 0.5;
+}
+
+.tick-line {
+    stroke: var(--text-tertiary);
+    stroke-width: 1;
+    opacity: 0.3;
+}
+
+.tick-text {
+    fill: var(--text-tertiary);
+    font-size: 10px;
+    font-family: var(--font-sans);
+}
+
+.vector-line {
+    stroke-width: 3;
+    stroke-linecap: round;
+    transition: all 0.3s ease;
+}
+
+.vector-point {
+    fill: currentColor;
+    transition: all 0.3s ease;
+}
+
+.vector-label {
+    fill: var(--text-primary);
+    font-size: 12px;
+    font-weight: 600;
+    pointer-events: none;
+    font-family: var(--font-sans);
+}
+
+/* Vector Colors */
+.vector-0 {
+    color: var(--accent-primary);
+    stroke: var(--accent-primary);
+}
+
+.vector-1 {
+    color: var(--accent-secondary);
+    stroke: var(--accent-secondary);
+}
+
+.vector-2 {
+    color: #EC4899;
+    stroke: #EC4899;
+}
+
+.vector-3 {
+    color: #10B981;
+    stroke: #10B981;
+}
+
+.vector-visualizer-container:hover .vector-line {
+    filter: drop-shadow(0 0 4px currentColor);
+}

@@ -1,0 +1,119 @@
+.lesson-page {
+    min-height: calc(100vh - var(--navbar-height));
+    background: var(--bg-primary);
+}
+
+.lesson-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--space-8) var(--space-6);
+}
+
+/* Breadcrumb */
+.lesson-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-6);
+    font-size: var(--font-size-sm);
+}
+
+.lesson-breadcrumb a {
+    color: var(--text-tertiary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.lesson-breadcrumb a:hover {
+    color: var(--accent-primary);
+}
+
+.lesson-breadcrumb .separator {
+    color: var(--text-tertiary);
+}
+
+.lesson-breadcrumb .current {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* Article */
+.lesson-article {
+    background: var(--bg-surface);
+    border-radius: var(--border-radius-xl);
+    border: 1px solid var(--border-color);
+    padding: var(--space-10);
+    margin-bottom: var(--space-8);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Footer */
+.lesson-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-4);
+}
+
+/* Buttons */
+.lesson-page .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    border-radius: var(--border-radius-md);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+
+.lesson-page .btn-primary {
+    background: var(--accent-gradient);
+    color: white;
+}
+
+.lesson-page .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.lesson-page .btn-secondary {
+    background: var(--bg-elevated);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+}
+
+.lesson-page .btn-secondary:hover {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border-color: var(--accent-primary);
+}
+
+/* Error State */
+.lesson-page .error-state {
+    text-align: center;
+    padding: var(--space-16);
+}
+
+.lesson-page .error-state h2 {
+    margin-bottom: var(--space-4);
+}
+
+.lesson-page .error-state p {
+    margin-bottom: var(--space-6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .lesson-container {
+        padding: var(--space-4);
+    }
+
+    .lesson-article {
+        padding: var(--space-6);
+    }
+
+    .lesson-breadcrumb {
+        flex-wrap: wrap;
+    }
+}

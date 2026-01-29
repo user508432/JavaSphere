@@ -29,42 +29,77 @@ export function Home() {
                 </div>
             </section>
 
-            {/* Stats Section */}
-            <section className="stats">
-                <div className="stat-item">
-                    <span className="stat-number">3</span>
-                    <span className="stat-label">Courses</span>
-                </div>
-                <div className="stat-item">
-                    <span className="stat-number">50+</span>
-                    <span className="stat-label">Lessons</span>
-                </div>
-                <div className="stat-item">
-                    <span className="stat-number">20+</span>
-                    <span className="stat-label">Visualizations</span>
+            {/* High-Impact Course Summary Section */}
+            <section className="impact-courses-section">
+                <div className="impact-grid">
+                    {/* Mathematics for AI */}
+                    <div className="impact-card math-card">
+                        <div className="impact-icon">📘</div>
+                        <h2>Mathematics for AI</h2>
+                        <div className="impact-content">
+                            <p className="impact-subtitle">Build deep intuition behind modern AI systems</p>
+                            <ul className="impact-list">
+                                <li>Vectors, matrices & tensors used in real AI models</li>
+                                <li>Similarity, projections & dimensionality reduction</li>
+                                <li>Gradients, loss functions & optimization intuition</li>
+                                <li>PCA, attention mechanisms & latent spaces</li>
+                            </ul>
+                            <div className="impact-footer">
+                                <span className="impact-tag">👉 Understand how AI really works under the hood</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* DSA */}
+                    <div className="impact-card dsa-card">
+                        <div className="impact-icon">💻</div>
+                        <h2>Data Structures & Algorithms – I</h2>
+                        <div className="impact-content">
+                            <p className="impact-subtitle">Learn how efficient software is built</p>
+                            <ul className="impact-list">
+                                <li>Searching & sorting algorithms</li>
+                                <li>Lists, stacks, queues & hashing</li>
+                                <li>Trees, heaps & priority queues</li>
+                                <li>Algorithm analysis & performance thinking</li>
+                            </ul>
+                            <div className="impact-footer">
+                                <span className="impact-tag">👉 Think like a computer scientist</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Web Development */}
+                    <div className="impact-card web-card">
+                        <div className="impact-icon">🌐</div>
+                        <h2>Fundamentals of Web Development</h2>
+                        <div className="impact-content">
+                            <p className="impact-subtitle">From internet basics to full deployment</p>
+                            <ul className="impact-list">
+                                <li>HTML, CSS & responsive layouts</li>
+                                <li>JavaScript fundamentals & DOM</li>
+                                <li>Forms, APIs & async programming</li>
+                                <li>Performance, SEO & deployment</li>
+                            </ul>
+                            <div className="impact-footer">
+                                <span className="impact-tag">👉 Build, optimize and deploy real websites</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-
-
-            {/* Features Section */}
-            <section className="features-section">
-                <h2 className="section-title">Why Choose Us</h2>
-                <div className="features-grid">
-                    <div className="feature-card">
-                        <span className="feature-icon">📊</span>
-                        <h3>Interactive Visualizations</h3>
-                        <p>Understand complex concepts through beautiful, interactive diagrams and animations.</p>
+            {/* Why These Courses Section */}
+            <section className="why-section">
+                <h2 className="section-title">🚀 Why These Courses?</h2>
+                <div className="why-grid">
+                    <div className="why-card">
+                        <h3>Designed for AI & tech foundations</h3>
                     </div>
-                    <div className="feature-card">
-                        <span className="feature-icon">🎯</span>
-                        <h3>Structured Learning</h3>
-                        <p>Follow a carefully designed curriculum that builds knowledge step by step.</p>
+                    <div className="why-card">
+                        <h3>Focus on intuition + real applications</h3>
                     </div>
-                    <div className="feature-card">
-                        <span className="feature-icon">💻</span>
-                        <h3>Code Examples</h3>
-                        <p>Learn with real code examples in Python, Java, and JavaScript.</p>
+                    <div className="why-card">
+                        <h3>No rote learning — concepts first</h3>
                     </div>
                 </div>
             </section>

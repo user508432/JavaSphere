@@ -11,7 +11,7 @@ function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
-        <div className="app">
+        <div className="app animate-entrance">
           <Navbar />
           <main className="main-content">
             <Routes>
